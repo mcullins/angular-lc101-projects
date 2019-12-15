@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './candidates.component.html',
   styleUrls: ['./candidates.component.css']
 })
+
 export class CandidatesComponent implements OnInit {
    missionName = "LaunchCode Moonshot"
 
@@ -23,10 +24,16 @@ export class CandidatesComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Code the addToCrew function here:
-
+  addToCrew (canidate: object){
+    if(!this.crew.includes(canidate)){
+      this.crew.push(canidate);
+    }
+  }
 
   // BONUS: Code the changeMissionName function here:
-
+  changeMissionName(newName: string){
+    this.missionName = newName;
+    console.log(newName)
+  }
 
 }
