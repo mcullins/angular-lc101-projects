@@ -9,6 +9,8 @@ export class ButtonsComponent implements OnInit {
    buttonHeading: string = "Buttons"
    inactive: boolean = false;
 
+   specialFactor: boolean = false;
+
    constructor() { }
 
    ngOnInit() { }

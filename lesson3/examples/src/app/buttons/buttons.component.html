@@ -5,3 +5,5 @@
    <button [class.copper]="!inactive" [disabled]="inactive" (click)="inactive = true">Copper</button> <hr>
    <button (click)="inactive = !inactive">Activate/Deactivate Buttons</button>
 </div>
+
+<div [class.special]="specialFactor" (click)="specialFactor = !specialFactor">Very Special Content</div>
